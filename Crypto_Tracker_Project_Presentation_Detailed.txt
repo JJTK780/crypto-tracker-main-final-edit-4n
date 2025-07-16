@@ -1,0 +1,96 @@
+Crypto Tracker Project Presentation - Detailed Slide Content
+
+Slide 1: Title Slide
+- Title: Crypto Tracker
+- Subtitle: Project Overview and Documentation
+- Presenter Name and Date (optional)
+
+Slide 2: Project Overview
+- Crypto Tracker is a React-based web application designed to provide users with real-time cryptocurrency data, news, and personalized price alerts.
+- The app offers a user-friendly interface to explore trending coins, search for cryptocurrencies, manage favorites, and stay updated with the latest crypto news.
+- It integrates secure user authentication and supports notifications for price alerts, enhancing user engagement and personalization.
+
+Slide 3: Features and Functionality
+- User Authentication:
+  - Utilizes Clerk for secure user sign-in, sign-up, and session management.
+  - Ensures a personalized experience with user-specific favorites and alerts.
+- Tabbed Interface:
+  - Trending: Displays a curated list of trending cryptocurrencies with rankings.
+  - Cryptocurrencies: Shows a comprehensive list of coins with detailed info such as current price, market cap, and price changes.
+  - Search: Allows users to search for coins by name or symbol.
+  - Favourites: Users can add or remove coins to their favorites list for quick access.
+  - Crypto News: Aggregates and displays the latest news articles related to cryptocurrencies.
+- Price Alerts:
+  - Users can create alerts specifying coin, target price, and direction (above or below).
+  - Alerts trigger browser notifications or alert popups when conditions are met.
+  - Alerts can be toggled active/inactive or removed and are persisted across sessions.
+
+Slide 4: Architecture and Technology Stack
+- Frontend built with React and TypeScript for robust and scalable UI development.
+- State Management handled by React Context API for global state like coins, favorites, and alerts.
+- Data Fetching and Caching managed by React Query, refreshing coin data and news every 5 minutes.
+- Authentication integrated via Clerk React SDK for secure user management.
+- Routing implemented with React Router DOM.
+- Styling done using Tailwind CSS and Headless UI for responsive and accessible design.
+- Notifications use the Web Notifications API.
+- Price alerts and user preferences persisted in localStorage.
+
+Slide 5: Data Model (ER Diagram)
+- Key Entities:
+  - Coin: Represents cryptocurrency details including price, market cap, supply, and historical data.
+  - TrendingCoin: Represents coins currently trending in the market.
+  - SearchCoin: Used for search functionality with coin metadata.
+  - NewsSource and NewsArticle: Represent sources and articles for crypto news aggregation.
+  - PriceAlert: Represents user-defined alerts linked to specific coins.
+- Relationships:
+  - PriceAlert belongs to a Coin.
+  - NewsArticle has a NewsSource.
+- The ER diagram visually represents these entities and their relationships, aiding in understanding the data structure.
+
+Slide 6: Component Structure
+- App.tsx: Main application component setting up routing and layout.
+- MenuTabs.tsx and MenuPanels.tsx: Define the tabbed navigation and render content for each tab.
+- CoinCard.tsx and TrendingCoinCard.tsx: Display individual coin details and trending coins respectively.
+- SearchCoinList.tsx: Provides the search interface for coins.
+- NewsList.tsx: Displays aggregated crypto news articles.
+- PriceAlertForm.tsx and PriceAlertList.tsx: Manage creation and listing of price alerts.
+- Layout.tsx: General page layout including header and footer components.
+
+Slide 7: Notification and Alert System
+- Price alerts are continuously checked against current coin prices.
+- When alert conditions are met, browser notifications are triggered if permission is granted.
+- If notifications are not permitted, fallback alert popups are shown.
+- Alerts are marked inactive after triggering to prevent repeated notifications.
+
+Slide 8: Authentication Flow
+- Clerk SDK manages user sign-in, sign-up, and session state.
+- The app checks authentication state before rendering main content.
+- User-specific data such as favorites and alerts are scoped to authenticated users, ensuring privacy and personalization.
+
+Slide 9: Styling and UI Framework
+- Tailwind CSS provides utility-first styling for rapid UI development.
+- Headless UI Tabs ensure accessible keyboard navigation and responsive design.
+- Dark mode support is included for better user experience.
+- The UI adapts seamlessly to various screen sizes for mobile and desktop users.
+
+Slide 10: Running and Testing the Project
+- To run the project:
+  - Install dependencies using `npm install`.
+  - Start the development server with `npm run dev`.
+  - Access the app at `http://localhost:5174` or the assigned port.
+- Testing involves:
+  - Navigating all tabs and verifying data display.
+  - Creating, toggling, and removing price alerts.
+  - Testing authentication flows.
+  - Managing favorites.
+  - Ensuring notification permissions are granted for alerts.
+
+Slide 11: Possible Extensions and Notes
+- Future enhancements could include:
+  - More detailed coin analytics and interactive charts.
+  - Support for multiple alert types such as volume or market cap changes.
+  - User profile and settings management.
+  - Integration with additional news sources.
+  - Improved error handling and loading states for better UX.
+
+End of Presentation
