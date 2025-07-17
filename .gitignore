@@ -7,18 +7,70 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependency directories
+node_modules/
+dist/
+dist-ssr/
 *.local
+
+# Build output
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Tailwind CSS JIT cache
+.tailwindcss/
+
+# npm package lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Misc
+*.tgz
+*.zip
+
+# App showcase images
+app-showcase/
+
+# Clerk dev session
+.clerk/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# React/Next.js/Vite specific
+.next/
+out/
+.cache/
+vite.config.ts
+vite-env.d.ts
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Test output
+jest/
+test-results/
