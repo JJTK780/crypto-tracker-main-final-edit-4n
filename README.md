@@ -1,7 +1,8 @@
 # Cryptocurrency Tracker
 
 ## 1. Project Overview
-Crypto Tracker is a React-based web application designed to provide users with real-time cryptocurrency data, news, and personalized price alerts. It offers a user-friendly interface to explore trending coins, search for cryptocurrencies, manage favorites, and stay updated with the latest crypto news. The app integrates user authentication and supports notifications for price alerts.
+Crypto Tracker is a React-based web application designed to provide users with real-time cryptocurrency data, news, and personalized price alerts. It offers a user-friendly interface to explore trending coins, search for cryptocurrencies, manage favorites, and stay updated with the latest crypto news. The app integrates user authentication and supports notifications for price alerts. 
+
 ![image alt](https://github.com/JJTK780/Crypto-Currency-Tracker/blob/ee9a5bccbe1a07c37c65934dd1ac8a2f7358f390/screenshot%20github%20cct.png)
 ## 2. Features and Functionality
 
