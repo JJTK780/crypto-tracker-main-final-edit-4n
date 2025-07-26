@@ -1,13 +1,14 @@
 {
-  "homepage": "https://github.com/feliperdamaceno/crypto-tracker",
+  "homepage": "https://github.com/JJTK780/Crypto-Currency-Tracker",
   "name": "crypto-tracker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.30.0",
