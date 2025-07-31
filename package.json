@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://JJTK780.github.io/Crypto-Currency-Tracker",
+  "homepage": "https://jjtk780.github.io/Crypto-Currency-Tracker",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

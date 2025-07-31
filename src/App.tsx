@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Tab } from "@headlessui/react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom"; // Change this line
 import { useAuth } from "@clerk/clerk-react";
 import Layout from "./components/Layout";
 import MenuTabs from "./components/MenuTabs";
@@ -27,7 +27,9 @@ export default function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <FavoritesProvider>
-        <BrowserRouter>
+        <HashRouter>
+          {" "}
+          {/* Change this line */}
           <Layout>
             <main className="w-full max-w-4xl px-2 mx-auto sm:px-0">
               <h1 className="mb-4 text-2xl font-semibold text-center">
@@ -41,7 +43,7 @@ export default function App() {
               </section>
             </main>
           </Layout>
-        </BrowserRouter>
+        </HashRouter>
       </FavoritesProvider>
     </Suspense>
   );
